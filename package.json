@@ -1,0 +1,14 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "description": "javascript project",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+    },
+  "author": "Santiago Creide",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
