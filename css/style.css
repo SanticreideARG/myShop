@@ -30,7 +30,7 @@ body{
 }
 .card{
 display: grid;
-grid-template-rows: 0.3fr 0.2fr 1fr 0.7fr 0.4fr;
+grid-template-rows: 0.6fr 0.2fr 0.7fr 1fr 0.3fr;
 font-family: 'Inter Tight', sans-serif;
 color: #01c380;
 font-weight: 700;
@@ -63,7 +63,6 @@ border-radius: 14px;
         text-shadow: 0 0 .5em var(--glow-color);
         position: relative;
         transition: all 0.3s;
-        margin: 20px;
        }
        
        .card   button::after {
@@ -99,16 +98,14 @@ border-radius: 14px;
 .card:first-child{
     display: none;
 }
-.card:nth-child(2){
-    display: none;
+
+.card:nth-child(4){
+  display: none;
 }
 .card:nth-child(5){
     display: none;
 }
-.card:nth-child(6){
-    display: none;
-}
-.card:nth-child(34){
+.card:nth-child(8){
     display: none;
 }
 .card img{
