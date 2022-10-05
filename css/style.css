@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #132D46;
+
+}
+.container{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #132D46;
+}
+.navbar-light{
+    background-color: #191E29;
+}
+.navbar-brand{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #132D46;
+    -webkit-text-stroke: 1px #01c380;
+}
+.header-total p{
+    color: #01c380;
+    font-weight: 700;
+    
+}
+.card{
+display: grid;
+grid-template-rows: 0.3fr 0.2fr 1fr 0.7fr 0.4fr;
+font-family: 'Inter Tight', sans-serif;
+color: #01c380;
+font-weight: 700;
+text-align: center;
+margin: 6px;
+border: 1px solid black;
+background-color: #191E29;
+border-radius: 14px;
+}
+.card p:first-of-type{
+    font-size: 30px;
+}
+
+.card button {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(1, 195, 128, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(21, 41, 44);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 1em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+        margin: 20px;
+       }
+       
+       .card   button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+       }
+       
+       .card  button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 2em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+       }
+       
+       .card    button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+               0 0 2.5em 2em var(--glow-spread-color),
+               inset 0 0 .5em .25em var(--glow-color);
+       }
+
+
+
+.card:first-child{
+    display: none;
+}
+.card:nth-child(2){
+    display: none;
+}
+.card:nth-child(5){
+    display: none;
+}
+.card:nth-child(6){
+    display: none;
+}
+.card:nth-child(34){
+    display: none;
+}
+.card img{
+    width: 90% ;
+    margin: 10px;
+}
+@media (min-width: 768px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
+@media (min-width: 1080px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+}}
+
